@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiAward, FiCode, FiTrendingUp, FiTarget } from 'react-icons/fi';
 import './About.css';
+import profileImg from '../assets/profile.jpg';
 
 const About = () => {
   const highlights = [
@@ -104,9 +105,7 @@ const About = () => {
             <div className="image-wrapper">
               <div className="image-border"></div>
               <div className="image-content">
-                <div className="profile-placeholder">
-                  <div className="placeholder-icon">VS</div>
-                </div>
+                <img src={profileImg} alt="Vibhum Sharma" className="profile-image" />
               </div>
             </div>
 
