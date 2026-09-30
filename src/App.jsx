@@ -251,6 +251,7 @@ function Projects() {
             <p className="muted">{p.subtitle}</p>
             <p>{p.description}</p>
             <Tags items={p.tags} />
+            {p.note && <p className="small note">{p.note}</p>}
             <ProjectLinks p={p} />
           </article>
         ))}

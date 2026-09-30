@@ -17,6 +17,7 @@ export const links = [
   { label: 'LinkedIn', href: 'https://linkedin.com/in/vibhum-sharma-10j', handle: 'vibhum-sharma-10j' },
   { label: 'Kaggle', href: 'https://www.kaggle.com/vibhumsharma', handle: 'vibhumsharma' },
   { label: 'LeetCode', href: 'https://leetcode.com/u/rover9696/', handle: 'rover9696' },
+  { label: 'HackerRank', href: 'https://www.hackerrank.com/profile/vibhum10sharma', handle: 'vibhum10sharma' },
   { label: 'Hugging Face', href: 'https://huggingface.co/rovermask', handle: 'rovermask' },
   { label: 'Instagram', href: 'https://www.instagram.com/ig_rover', handle: '@ig_rover' },
 ];
@@ -82,6 +83,7 @@ export const projects = [
     highlight: '97.7% accuracy · patent filed',
     github: 'https://github.com/rovermask/LungVision',
     live: 'https://tb-detection-flask.onrender.com',
+    note: 'The live demo can take up to a minute to wake up on first load.',
     featured: true,
   },
   {
@@ -128,7 +130,6 @@ export const projects = [
       'A Django site with interactive encryption and decryption tools that teach the core cryptographic algorithms.',
     tags: ['Django', 'Python', 'Cryptography'],
     github: 'https://github.com/rovermask/CYM',
-    live: 'https://cymdjango.vercel.app',
   },
   {
     title: 'TMDB Proxy Server',
@@ -136,7 +137,6 @@ export const projects = [
     description: 'A lightweight Python service that proxies TMDB search and movie lookups so the API key stays server-side.',
     tags: ['Python', 'REST API', 'Vercel'],
     github: 'https://github.com/rovermask/tmdb-proxy-server',
-    live: 'https://tmdb-proxy-server-ten.vercel.app',
   },
 ];
 

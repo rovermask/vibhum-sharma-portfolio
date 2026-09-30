@@ -1,16 +1,28 @@
-# React + Vite
+# Vibhum Sharma: Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio of Vibhum Sharma, Ph.D. research scholar at IIIT Allahabad (multimodal disease prognosis).
 
-Currently, two official plugins are available:
+**Live:** https://vibhumsharma.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+React 19 · Vite · plain CSS (no UI framework) · react-icons · deployed on Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Updating content
 
-## Expanding the ESLint configuration
+Everything on the page (profile, research, experience, projects, certificates, skills, links) lives in [`src/data.js`](src/data.js). Edit that file; no component changes are needed for routine updates.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Certificates** link to files in Google Drive. Keep the folder shared as "Anyone with the link can view".
+- **Resume** is served from `public/resume.pdf`. Replace the file to update it.
+- **Theme:** light/dark toggle; follows the system setting by default and remembers the choice.
+
+## Development
+
+```bash
+npm install
+npm run dev      # local dev server
+npm run lint
+npm run build    # production build to dist/
+```
+
+Pushing to `main` deploys automatically through Vercel.

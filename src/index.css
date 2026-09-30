@@ -447,6 +447,10 @@ ul {
   white-space: nowrap;
 }
 
+.proj .note {
+  margin-bottom: 14px;
+}
+
 .proj-links {
   display: flex;
   gap: 18px;
