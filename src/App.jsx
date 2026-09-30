@@ -162,6 +162,7 @@ function Research() {
           <span>Research area</span> {research.area}
         </p>
         <p>{research.summary}</p>
+        <p className="small">{research.patent}</p>
       </div>
       <ul className="timeline">
         {education.map((e) => (
@@ -334,8 +335,9 @@ function Contact() {
   return (
     <Section id="contact" kicker="06" title="Let's talk">
       <p className="lead">
-        I'm open to research collaborations, internships and interesting ML problems. Email is the
-        quickest way to reach me.
+        I'm looking for ML Engineer, AI Engineer, Data Scientist and Data Analyst roles alongside my
+        Ph.D., and I'm open to research collaborations. Long term, I'm aiming for industry R&amp;D or
+        an academic career. Email is the quickest way to reach me.
       </p>
       <a className="big-mail" href={`mailto:${profile.email}`}>
         {profile.email} <FiArrowUpRight />

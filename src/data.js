@@ -2,10 +2,10 @@
 
 export const profile = {
   name: 'Vibhum Sharma',
-  role: 'Ph.D. Scholar · IIIT Allahabad',
+  role: 'Research Scholar · IIIT Allahabad',
   headline: 'I build machine-learning systems, from research to production.',
   intro:
-    "Ph.D. scholar working on multimodal disease prognosis at IIIT Allahabad. Before that, an MCA graduate who shipped ML models, computer-vision apps and Python backends, and interned on production AI products at ParallelDots and SmartED.",
+    "Ph.D. research scholar working on multimodal disease prognosis at IIIT Allahabad. I build AI systems that go from prototype to production: ML models, computer-vision apps and Python backends, with internships on production AI products at ParallelDots and SmartED.",
   location: 'Prayagraj, India',
   email: 'vibhum10sharma@gmail.com',
   resume: '/resume.pdf',
@@ -27,6 +27,7 @@ export const research = {
   mode: 'Full-time',
   since: 'Jun 2026',
   area: 'Multimodal disease prognosis',
+  patent: 'Patent application filed for a CNN-based tuberculosis detection system.',
   summary:
     'My research looks at predicting how a disease will progress by combining more than one kind of patient data, such as medical images and clinical records, in a single model.',
 };
@@ -78,7 +79,7 @@ export const projects = [
     description:
       'A CNN that classifies chest X-rays as TB-positive or normal, with augmentation for robustness and accuracy and confusion-matrix views. Served through a Flask app on Render.',
     tags: ['TensorFlow', 'Keras', 'Flask', 'Computer vision'],
-    highlight: '97.7% accuracy',
+    highlight: '97.7% accuracy · patent filed',
     github: 'https://github.com/rovermask/LungVision',
     live: 'https://tb-detection-flask.onrender.com',
     featured: true,
