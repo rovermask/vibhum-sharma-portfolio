@@ -39,7 +39,7 @@
 
 \RequirePackage{color}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
+\usepackage[a4paper,top=0.5in,bottom=0.5in,left=0.6in,right=0.6in]{geometry}
 
 % tabular environments
 \usepackage{tabularx}
@@ -47,11 +47,12 @@
 
 % lists within experience sections
 \usepackage{enumitem}
+\usepackage{needspace}
 
 % custom \section
 \usepackage{titlesec}
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{8pt}
+\titlespacing{\section}{0pt}{7pt}{5pt}
 
 % hyperref and link colours
 \usepackage[unicode, draft=false]{hyperref}
@@ -65,32 +66,32 @@
 % job listing environment: bold title + right-aligned dates, then bullets
 \newenvironment{joblong}[2]
     {
+    \Needspace{6\baselineskip}
     \begin{tabularx}{\linewidth}{@{}X r@{}}
     \textbf{#1} & #2 \\[3.75pt]
     \end{tabularx}
-    \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    \nopagebreak
+    \begin{itemize}[nosep, leftmargin=1em, itemsep=3pt,label=--]\raggedright
     }
     {
     \end{itemize}
-    \end{minipage}
-    \vspace{6pt}
+    \vspace{4pt}
     }
 
 % project environment: name + dates, italic tech-stack/links line, then bullets
 \newenvironment{projlong}[3]
     {
+    \Needspace{6\baselineskip}
     \begin{tabularx}{\linewidth}{@{}X r@{}}
     \textbf{#1} & #2 \\
     \multicolumn{2}{@{}X@{}}{\textit{#3}} \\[3.75pt]
     \end{tabularx}
-    \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    \nopagebreak
+    \begin{itemize}[nosep, leftmargin=1em, itemsep=3pt,label=--]\raggedright
     }
     {
     \end{itemize}
-    \end{minipage}
-    \vspace{6pt}
+    \vspace{4pt}
     }
 
 %----------------------------------------------------------------------------------------
@@ -107,9 +108,9 @@
 \Huge{Vibhum Sharma} \\[7.5pt]
 Prayagraj, Uttar Pradesh, India \ $|$ \ +91-9696177580 \ $|$ \
 \href{mailto:vibhum10sharma@gmail.com}{vibhum10sharma@gmail.com} \\[3pt]
-LinkedIn: \href{https://linkedin.com/in/vibhum-sharma-10j}{linkedin.com/in/vibhum-sharma-10j} \ $|$ \
-GitHub: \href{https://github.com/rovermask}{github.com/rovermask} \ $|$ \
-Portfolio: \href{https://vibhumsharma.vercel.app}{vibhumsharma.vercel.app} \\
+\href{https://linkedin.com/in/vibhum-sharma-10j}{linkedin.com/in/vibhum-sharma-10j} \ $|$ \
+\href{https://github.com/rovermask}{github.com/rovermask} \ $|$ \
+\href{https://vibhumsharma.vercel.app}{vibhumsharma.vercel.app} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -118,7 +119,7 @@ Portfolio: \href{https://vibhumsharma.vercel.app}{vibhumsharma.vercel.app} \\
 \section{Summary}
 Ph.D. research scholar in Information Technology at IIIT Allahabad working on multimodal disease
 prognosis, with hands-on experience in machine learning, deep learning (CNN), computer vision, NLP
-and Python backend development (Flask, FastAPI, Django, REST APIs). Built and deployed end-to-end ML
+and Python backend development (Flask, Django, REST APIs). Built and deployed end-to-end ML
 applications, including a tuberculosis detection model with 97.7\% accuracy (patent application filed),
 and completed internships at ParallelDots and SmartED. Seeking Machine Learning Engineer, AI Engineer,
 Data Scientist, Data Analyst and Python Backend Developer roles.
@@ -131,8 +132,8 @@ Data Scientist, Data Analyst and Python Backend Developer roles.
 Jun 2026 -- Present & Ph.D. in Information Technology (Full-time), \textbf{Indian Institute of Information Technology Allahabad (IIIT Allahabad)}, Prayagraj \\
 & \textit{Research area: Multimodal Disease Prognosis} \\[6pt]
 
-Sept 2023 -- May 2025 & Master of Computer Applications (MCA), \textbf{Sam Higginbottom University of Agriculture, Technology and Sciences (SHUATS)}, Prayagraj % Add CGPA here if you want it shown, e.g. \hfill (CGPA: X.XX/10)
-\\[6pt]
+Sept 2023 -- May 2025 & Master of Computer Applications (MCA), \textbf{Sam Higginbottom University of Agriculture, Technology and Sciences (SHUATS)}, Prayagraj \\
+& \textit{CGPA: 7.88/10} \\[6pt]
 
 Jul 2020 -- Jul 2023 & Bachelor of Computer Applications (BCA), \textbf{Ewing Christian College}, Prayagraj \\
 \end{tabularx}
@@ -142,12 +143,12 @@ Jul 2020 -- Jul 2023 & Bachelor of Computer Applications (BCA), \textbf{Ewing Ch
 %----------------------------------------------------------------------------------------
 \section{Technical Skills}
 \begin{tabularx}{\linewidth}{@{}>{\bfseries}p{3.6cm} X@{}}
-Languages & Python, SQL, C++, JavaScript \\[3pt]
-Machine Learning \& AI & Machine Learning, Deep Learning, Convolutional Neural Networks (CNN), Computer Vision, Natural Language Processing (NLP), TensorFlow, Keras, scikit-learn, OpenCV, MediaPipe, Data Augmentation, Model Evaluation, Model Deployment \\[3pt]
-Data Analysis \& Visualization & pandas, NumPy, Matplotlib, Seaborn, Exploratory Data Analysis (EDA), Data Cleaning, Feature Extraction \\[3pt]
-Backend \& Web & Flask, FastAPI, Django, REST APIs, API Testing, React, HTML, CSS \\[3pt]
-Databases & MySQL, Firebase (Firestore) \\[3pt]
-Cloud \& Tools & Microsoft Azure, Vercel, Render, Git, GitHub \\
+Languages: & Python, SQL, C++, JavaScript \\[3pt]
+Machine Learning \& AI: & Machine Learning, Deep Learning, Convolutional Neural Networks (CNN), Computer Vision, Natural Language Processing (NLP), TensorFlow, Keras, scikit-learn, OpenCV, MediaPipe, Data Augmentation, Model Evaluation, Model Deployment \\[3pt]
+Data Analysis \& Visualization: & pandas, NumPy, Matplotlib, Seaborn, Exploratory Data Analysis (EDA), Data Cleaning, Feature Extraction \\[3pt]
+Backend \& Web: & Flask, Django, REST APIs, API Testing, React, HTML, CSS \\[3pt]
+Databases: & MySQL, Firebase (Firestore) \\[3pt]
+Cloud \& Tools: & Microsoft Azure, Vercel, Render, Git, GitHub \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -155,7 +156,7 @@ Cloud \& Tools & Microsoft Azure, Vercel, Render, Git, GitHub \\
 %----------------------------------------------------------------------------------------
 \section{Work Experience}
 
-\begin{joblong}{Backend Intern, ParallelDots (ShelfWatch: AI-powered retail shelf analytics), Remote}{Oct 2025 -- Jan 2026}
+\begin{joblong}{Backend Intern, ParallelDots, Remote}{Oct 2025 -- Jan 2026}
 \item Designed and executed automated and manual test cases for RESTful backend APIs powering the ShelfWatch product, improving API reliability and regression coverage.
 \item Collaborated with backend engineers to validate edge cases, error handling and performance across production-critical endpoints.
 \item Worked with Python in a production backend environment and followed quality assurance practices for API testing.
@@ -170,6 +171,7 @@ Cloud \& Tools & Microsoft Azure, Vercel, Render, Git, GitHub \\
 %----------------------------------------------------------------------------------------
 %	PROJECTS
 %----------------------------------------------------------------------------------------
+\newpage
 \section{Projects}
 
 \begin{projlong}{LungVision: Tuberculosis Detection from Chest X-rays}{Feb 2025 -- Apr 2025}
