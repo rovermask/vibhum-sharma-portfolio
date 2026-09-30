@@ -43,8 +43,14 @@ export const education = [
   {
     degree: 'Master of Computer Applications (MCA)',
     school: 'Sam Higginbottom University of Agriculture, Technology and Sciences (SHUATS), Prayagraj',
-    period: 'Graduated 2025',
-    note: '',
+    period: 'Sept 2023 – May 2025',
+    note: 'CGPA: 7.88 / 10',
+  },
+  {
+    degree: 'Bachelor of Computer Applications (BCA)',
+    school: 'Ewing Christian College, Prayagraj',
+    period: 'Jul 2020 – Jul 2023',
+    note: 'CGPA: 7.78 / 10',
   },
 ];
 
