@@ -147,8 +147,8 @@ export const featuredCerts = [
     title: 'Azure AI Fundamentals (AI-900)',
     issuer: 'Microsoft',
     year: '2025',
-    href: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/',
-    hrefLabel: 'About the certification',
+    href: 'https://learn.microsoft.com/en-gb/users/vibhumsharma-5511/credentials/69bc5983bdc9b454',
+    hrefLabel: 'Verify credential',
   },
   {
     title: 'Agentic AI Development',
@@ -163,21 +163,21 @@ export const featuredCerts = [
     href: drive('1atB0EFFwlUovXqTlnjh_6dQbjlW-CV_H'),
   },
   {
-    title: 'Data Analytics Job Simulation',
+    title: 'Data Analytics and Visualization Job Simulation',
     issuer: 'Accenture (Forage)',
-    year: '2026',
+    year: 'Jan 2025',
     href: drive('1HaVwocSke3dW8uYUhKH-EX1sBqAc0res'),
   },
   {
     title: 'Machine Learning Internship',
-    issuer: 'SmartEd',
-    year: '2024',
+    issuer: 'SmartED',
+    year: 'Dec 2024',
     href: drive('11jX3-ec9fN9cMyJYpCg8gU7iBk8ZPKjT'),
   },
   {
     title: 'AI Tools Workshop',
     issuer: 'Be10x',
-    year: '2026',
+    year: 'Jun 2026',
     href: drive('1M6AyUpftOrRCnA6JtbBk_-_KURtLncNY'),
   },
 ];
