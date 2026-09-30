@@ -1,0 +1,207 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+% Resume of Vibhum Sharma, built on the autoCV layout by Jitin Nair
+% (https://github.com/jitinnair1/autoCV), used under the MIT License below.
+% Adjusted for ATS: no icon fonts, plain-text contact labels, Unicode text mapping.
+% Compile with pdfLaTeX (Overleaf default).
+%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+\documentclass[a4paper,11pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{parskip}
+
+\RequirePackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+% tabular environments
+\usepackage{tabularx}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+% lists within experience sections
+\usepackage{enumitem}
+
+% custom \section
+\usepackage{titlesec}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{8pt}
+
+% hyperref and link colours
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+% Makes copied/parsed text map to real Unicode characters (important for ATS)
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% job listing environment: bold title + right-aligned dates, then bullets
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}
+    \vspace{6pt}
+    }
+
+% project environment: name + dates, italic tech-stack/links line, then bullets
+\newenvironment{projlong}[3]
+    {
+    \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+    \multicolumn{2}{@{}X@{}}{\textit{#3}} \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}
+    \vspace{6pt}
+    }
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Vibhum Sharma} \\[7.5pt]
+Prayagraj, Uttar Pradesh, India \ $|$ \ +91-9696177580 \ $|$ \
+\href{mailto:vibhum10sharma@gmail.com}{vibhum10sharma@gmail.com} \\[3pt]
+LinkedIn: \href{https://linkedin.com/in/vibhum-sharma-10j}{linkedin.com/in/vibhum-sharma-10j} \ $|$ \
+GitHub: \href{https://github.com/rovermask}{github.com/rovermask} \ $|$ \
+Portfolio: \href{https://vibhumsharma.vercel.app}{vibhumsharma.vercel.app} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY
+%----------------------------------------------------------------------------------------
+\section{Summary}
+Ph.D. research scholar in Information Technology at IIIT Allahabad working on multimodal disease
+prognosis, with hands-on experience in machine learning, deep learning (CNN), computer vision, NLP
+and Python backend development (Flask, FastAPI, Django, REST APIs). Built and deployed end-to-end ML
+applications, including a tuberculosis detection model with 97.7\% accuracy (patent application filed),
+and completed internships at ParallelDots and SmartED. Seeking Machine Learning Engineer, AI Engineer,
+Data Scientist, Data Analyst and Python Backend Developer roles.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l @{\hspace{1.5em}} X@{}}
+Jun 2026 -- Present & Ph.D. in Information Technology (Full-time), \textbf{Indian Institute of Information Technology Allahabad (IIIT Allahabad)}, Prayagraj \\
+& \textit{Research area: Multimodal Disease Prognosis} \\[6pt]
+
+Sept 2023 -- May 2025 & Master of Computer Applications (MCA), \textbf{Sam Higginbottom University of Agriculture, Technology and Sciences (SHUATS)}, Prayagraj % Add CGPA here if you want it shown, e.g. \hfill (CGPA: X.XX/10)
+\\[6pt]
+
+Jul 2020 -- Jul 2023 & Bachelor of Computer Applications (BCA), \textbf{Ewing Christian College}, Prayagraj \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{3.6cm} X@{}}
+Languages & Python, SQL, C++, JavaScript \\[3pt]
+Machine Learning \& AI & Machine Learning, Deep Learning, Convolutional Neural Networks (CNN), Computer Vision, Natural Language Processing (NLP), TensorFlow, Keras, scikit-learn, OpenCV, MediaPipe, Data Augmentation, Model Evaluation, Model Deployment \\[3pt]
+Data Analysis \& Visualization & pandas, NumPy, Matplotlib, Seaborn, Exploratory Data Analysis (EDA), Data Cleaning, Feature Extraction \\[3pt]
+Backend \& Web & Flask, FastAPI, Django, REST APIs, API Testing, React, HTML, CSS \\[3pt]
+Databases & MySQL, Firebase (Firestore) \\[3pt]
+Cloud \& Tools & Microsoft Azure, Vercel, Render, Git, GitHub \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Work Experience}
+
+\begin{joblong}{Backend Intern, ParallelDots (ShelfWatch: AI-powered retail shelf analytics), Remote}{Oct 2025 -- Jan 2026}
+\item Designed and executed automated and manual test cases for RESTful backend APIs powering the ShelfWatch product, improving API reliability and regression coverage.
+\item Collaborated with backend engineers to validate edge cases, error handling and performance across production-critical endpoints.
+\item Worked with Python in a production backend environment and followed quality assurance practices for API testing.
+\end{joblong}
+
+\begin{joblong}{Data Science and Machine Learning Intern, SmartED, Remote}{Sept 2024 -- Dec 2024}
+\item Built an end-to-end sentiment analysis pipeline using NLP techniques, covering data cleaning, feature extraction, model training and evaluation.
+\item Performed exploratory data analysis (EDA) and visualization with pandas and Seaborn to derive insights from social media datasets.
+\item Applied text preprocessing techniques including tokenization, stemming and vectorization for machine learning models.
+\end{joblong}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projects}
+
+\begin{projlong}{LungVision: Tuberculosis Detection from Chest X-rays}{Feb 2025 -- Apr 2025}
+{TensorFlow, Keras, CNN, Computer Vision, Flask, Render \ $|$ \ \href{https://github.com/rovermask/LungVision}{GitHub} \ $|$ \ \href{https://tb-detection-flask.onrender.com}{Live Demo}}
+\item Designed, trained and evaluated a Convolutional Neural Network (CNN) to classify chest X-ray images as tuberculosis-positive or normal, achieving 97.7\% accuracy using preprocessing and data augmentation.
+\item Deployed the model as a Flask web service on Render for real-time inference; visualized accuracy curves and confusion matrix with Matplotlib and Seaborn.
+\item Filed a patent application for the CNN-based tuberculosis detection system.
+\end{projlong}
+
+\begin{projlong}{WatchBuddy: Movie, Series and Book Tracker}{Jul 2025 -- Sept 2025}
+{React, Firebase Authentication, Firestore, REST APIs \ $|$ \ \href{https://github.com/rovermask/watch-buddy}{GitHub} \ $|$ \ \href{https://watch-buddy-one.vercel.app}{Live Demo}}
+\item Built a full-stack web application with React and Firebase (Authentication, Firestore) to track movies, series and books, integrating the TMDB and Google Books REST APIs with live search suggestions.
+\item Implemented ISBN barcode scanning, custom lists, personalized recommendations and a light/dark theme; deployed on Vercel.
+\end{projlong}
+
+\begin{projlong}{AirCanvas: Gesture-Controlled Virtual Drawing}{Sept 2024 -- Dec 2024}
+{Python, OpenCV, MediaPipe \ $|$ \ \href{https://github.com/rovermask/air-canvas}{GitHub}}
+\item Implemented a real-time virtual drawing application using hand-gesture recognition from webcam input, and optimized gesture tracking and rendering for smooth, accurate strokes.
+\end{projlong}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\section{Certifications}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Microsoft Certified: Azure AI Fundamentals (AI-900)}, Microsoft & Sept 2025 \\[2pt]
+\textbf{Agentic AI Development}, Eduxlabs, IIT Madras & Aug 2025 \\[2pt]
+\textbf{Python for Data Science and Machine Learning Bootcamp}, Udemy & Mar 2025 \\[2pt]
+\textbf{Data Analytics and Visualization Job Simulation}, Accenture (Forage) & Jan 2025 \\[2pt]
+\textbf{Machine Learning Internship Certificate}, SmartED & Dec 2024 \\[2pt]
+\textbf{Introduction to Python}, Microsoft Technology Associate (MTA) & Aug 2021 \\[2pt]
+\textbf{HackerRank Certificates:} Python (Basic), SQL (Basic), Problem Solving (Basic and Intermediate) & \\
+\end{tabularx}
+
+\end{document}
